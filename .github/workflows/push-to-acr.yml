@@ -17,9 +17,4 @@ jobs:
           registry: ${{ secrets.registry }}
           repository: ${{ secrets.repository }}
           image: sample-python-flask-api
-          # Omitted to clear a warning
-          # git_access_token: ${{ secrets.git_access_token }}
-          # Omitted; Build context for Docker; default to the root of the git repository
-          # folder: ../../
-          # Omitted; Path to the Dockerfile relative to folder; defaults to ./Dockerfile
-          # dockerfile: ../../Dockerfile
+          tag: latest

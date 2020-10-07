@@ -16,7 +16,7 @@ jobs:
           tenant: ${{ secrets.tenant }}
           registry: ${{ secrets.registry }}
           repository: ${{ secrets.repository }}
-          image: sample-python-flask-api
+          image: rvajustin/sample-python-flask-api:latest
           git_access_token: ${{ secrets.git_access_token }}
           folder: ../../
           dockerfile: ../../Dockerfile

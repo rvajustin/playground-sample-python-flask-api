@@ -1,8 +1,6 @@
-FROM tiangolo/meinheld-gunicorn-flask:python3.8
+FROM tiangolo/meinheld-gunicorn-flask:python3.8-alpine3.11
 
 COPY ./app /app
-
-WORKDIR /app
 
 ENV GUNICORN_CONF=gunicorn_conf.py
 

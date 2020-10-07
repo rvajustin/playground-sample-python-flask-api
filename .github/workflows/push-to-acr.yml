@@ -15,8 +15,8 @@ jobs:
           service_principal_password: ${{ secrets.service_principal_password }}
           tenant: ${{ secrets.tenant }}
           registry: ${{ secrets.registry }}
-          repository: ${{ secrets.repository }}
-          image: rvajustin/sample-python-flask-api:latest
+          # repository: ${{ secrets.repository }}
+          image: sample-python-flask-api
           git_access_token: ${{ secrets.git_access_token }}
           folder: ../../
           dockerfile: ../../Dockerfile
